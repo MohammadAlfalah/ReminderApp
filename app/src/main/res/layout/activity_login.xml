@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_large"
+    android:background="@color/backgroundColor"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <FrameLayout
+        android:id="@+id/titleBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remindly"
+            android:textSize="120sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/titleOverlay"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logcat"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="-130dp"
+            android:layout_gravity="start|top"
+            android:contentDescription="Decor over i" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username/Email"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="220dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="@dimen/padding_medium" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailInput"
+        android:layout_marginTop="-200dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="@dimen/padding_medium" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@color/primaryColor"
+        android:textSize="14sp"
+        android:layout_below="@id/passwordInput"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/goToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account yet?"
+        android:textColor="@color/primaryColor"
+        android:textSize="14sp"
+        android:layout_below="@id/forgotPassword"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@id/goToRegister"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+    <CheckBox
+        android:id="@+id/rememberMeCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:layout_below="@id/goToRegister"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_centerHorizontal="true"
+        android:translationY="-23dp" />
+
+
+
+</RelativeLayout>

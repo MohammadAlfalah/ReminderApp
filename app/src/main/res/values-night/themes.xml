@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base dark theme -->
+    <style name="Base.Theme.MyFApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Your brand dark colors (keep same for simplicity) -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accentColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSurface">@color/backgroundColor</item>
+        <item name="colorOnBackground">@color/textPrimary</item>
+        <item name="colorOnSurface">@color/textPrimary</item>
+
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyFApp.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyFApp.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyFApp.Large</item>
+    </style>
+</resources>

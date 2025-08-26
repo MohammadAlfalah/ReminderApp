@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Remindly</string>
+    <string name="empty_reminder_text">No reminders yet. Tap + to add one!</string>
+    <string name="add_reminder_desc">Add reminder</string>
+    <string name="reminder_list_desc">List of reminders</string> <!-- ✅ This one was missing -->
+    <string name="menu_add">Add</string>
+    <string name="menu_hide_completed">Hide Completed</string>
+    <string name="menu_show_completed">Show Completed</string>
+    <string name="menu_show_only_completed">Show Only Completed</string>
+
+
+</resources>
